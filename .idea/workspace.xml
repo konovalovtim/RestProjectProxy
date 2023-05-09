@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4a4eaa1e-178e-4cb1-adbc-e32816c30b18" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/restprojectproxy/controller/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/restprojectproxy/controller/ClientController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/restprojectproxy/controller/ClientController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/restprojectproxy/controller/ClientController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/restprojectproxy/service/ClientService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/restprojectproxy/service/ClientService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +89,7 @@
       <updated>1683396296798</updated>
       <workItem from="1683396298069" duration="8431000" />
       <workItem from="1683405398466" duration="6285000" />
-      <workItem from="1683547291074" duration="661000" />
+      <workItem from="1683547291074" duration="987000" />
     </task>
     <servers />
   </component>

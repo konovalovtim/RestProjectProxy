@@ -21,7 +21,7 @@ public class ClientController {
     @Operation(summary = "Сохранение пользователя", tags = {"Clients"})
     @PostMapping(value = "/clients")
     public void createClient(@RequestBody ClientDTO clientDTO) {
-        clientService.createNewClient(clientDTO);
+        clientService.createClient(clientDTO);
         log.info("client: " + clientDTO.toString() + " add");
     }
 
@@ -29,34 +29,34 @@ public class ClientController {
     @GetMapping(value = "/clients")
     public List<ClientDTO> showAllClients() {
         log.info("display all clients");
-        return clientService.displayAllClients();
+        return clientService.showAllClients();
     }
 
     @Operation(summary = "Вывести клиента по id", tags = {"Clients"})
     @GetMapping(value = "/clients/{id}")
     public ClientDTO getClientById(@PathVariable(name = "id") Integer id) {
-        log.info("return from db client: " + clientService.getOneClientById(id).toString());
-        return clientService.getOneClientById(id);
+        log.info("return from db client: " + clientService.getClientById(id).toString());
+        return clientService.getClientById(id);
     }
 
     @Operation(summary = "Вывести клиента по name", tags = {"Clients"})
     @GetMapping(value = "/clients/name/{name}")
     public ClientDTO getClientByName(@PathVariable(name = "name") String name) {
-        log.info("return from db client: " + clientService.getOneClientByName(name).toString());
-        return clientService.getOneClientByName(name);
+        log.info("return from db client: " + clientService.getClientByName(name).toString());
+        return clientService.getClientByName(name);
     }
 
     @Operation(summary = "Изменить данные клиентов", tags = {"Clients"})
     @PutMapping(value = "/clients/{id}")
     public void сhangeClientData(@PathVariable(name = "id") Integer id, @RequestBody ClientDTO clientDTO) {
-        clientService.сhangeClientDataById(id, clientDTO);
+        clientService.сhangeClientData(id, clientDTO);
         log.info("client data by id: " + id + " changed to: " + clientDTO.toString());
     }
 
     @Operation(summary = "Удалить клиента по id", tags = {"Clients"})
     @DeleteMapping(value = "/clients/{id}")
     public void deleteClientById(@PathVariable(name = "id") Integer id) {
-        clientService.deleteOneClientById(id);
+        clientService.deleteClientById(id);
         log.info("remove client by id: " + id);
     }
 }

@@ -1,0 +1,5 @@
+com/example/restprojectproxy/controller/ClientController.class
+com/example/restprojectproxy/model/dto/ClientDTO.class
+com/example/restprojectproxy/service/ClientService.class
+com/example/restprojectproxy/client/ClientsClient.class
+com/example/restprojectproxy/RestProjectProxyApplication.class

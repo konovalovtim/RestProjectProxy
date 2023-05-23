@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@FeignClient(name = "clients", url = "localhost:8080")
+@FeignClient(name = "clients", url = "app:8080")
 public interface ClientsClient {
 
     @PostMapping(value = "/clients")
